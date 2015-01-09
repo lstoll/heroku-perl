@@ -1,8 +1,12 @@
-#!/usr/bin/env perl
+#!/usr/bin/env perl6
 
-print "Content-type: text/html\n\n";
+use v6;
 
-print <<"EOF";
+my Str $adjective = "nasty";
+
+say "Content-type: text/html\n";
+
+say "
 <HTML>
 
 <HEAD>
@@ -10,8 +14,8 @@ print <<"EOF";
 </HEAD>
 
 <BODY>
-<H1>Hello, from nasty PERL CGI world!</H1>
+<H1>Hello, from $adjective PERL(6) CGI world!</H1>
 </BODY>
 
 </HTML>
-EOF
+"
